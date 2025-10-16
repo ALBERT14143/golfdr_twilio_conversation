@@ -43,13 +43,13 @@ public class GolfdrTwilioConversationPlugin implements FlutterPlugin, MethodCall
     public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
         channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "golfdr_twilio_conversation");
         channel.setMethodCallHandler(this);
-        eventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "twilio_conversation_sdk/onMessageUpdated");
+        eventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "golfdr_twilio_conversation/onMessageUpdated");
         eventChannel.setStreamHandler(this);
-        eventSyncChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "twilio_conversation_sdk/onSynchronizationChanged");
+        eventSyncChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "golfdr_twilio_conversation/onSynchronizationChanged");
         eventSyncChannel.setStreamHandler(this);
-        tokenEventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "twilio_conversation_sdk/onTokenStatusChange");
+        tokenEventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "golfdr_twilio_conversation/onTokenStatusChange");
         tokenEventChannel.setStreamHandler(this);
-        clientEventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "twilio_conversation_sdk/onClientSynchronizationChanged");
+        clientEventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "golfdr_twilio_conversation/onClientSynchronizationChanged");
         clientEventChannel.setStreamHandler(this);
 
         ConversationHandler.flutterPluginBinding = flutterPluginBinding;
