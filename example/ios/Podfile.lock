@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - golfdr_twilio_conversation (0.0.1):
+    - Flutter
+  - integration_test (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - golfdr_twilio_conversation (from `.symlinks/plugins/golfdr_twilio_conversation/ios`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  golfdr_twilio_conversation:
+    :path: ".symlinks/plugins/golfdr_twilio_conversation/ios"
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  golfdr_twilio_conversation: b97d1d39542ebf34d65d405e0c2c27a7c2db924f
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
+
+PODFILE CHECKSUM: 4305caec6b40dde0ae97be1573c53de1882a07e5
+
+COCOAPODS: 1.16.2
